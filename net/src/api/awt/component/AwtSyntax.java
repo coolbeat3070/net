@@ -1,4 +1,4 @@
-package api.awt;
+package api.awt.component;
 /*
 AWT (Abstract Windows Toolkit)
     : GUI(Graphic User Interface)환경의 프로그램및 안드로이드 위젯과 비슷
@@ -6,10 +6,12 @@ AWT (Abstract Windows Toolkit)
  컴포넌트 :사용자 인터페이스를 구성하는 기본요소
              버튼, 체크박스, 레이블, 텍스트필드, 리스트, 팝업메뉴와 같은 부속품의 총칭
              자바에서는 component라는 클래스가 있는데 모든 컴포넌트들은 
-             이 Compont 클래스의 자손이다.
- 컨테이너 : 컨테이너는 컴포넌트들이 붙어 있는 윈도우 같은 것
+             이 Component 클래스의 자손이다.
+ 컨테이너 : Component 자손들 중에 Container 와 그 자손들을 말한다. 
+ 			컨테이너는 컴포넌트들이 붙어 있는 윈도우 같은 것
              윈도우, 프레임, 패널, 다이얼로그 박스 등이 있다.  
              (다른 컴포넌트를 담을수 있는 컴포넌트)
+             
  레이아웃 : 컨테이너에 컴포넌트를 붙일때 어떤 식으로 배치하는가가 중요한데 
               이것을 레이아웃이라 한다
  이벤트 : 사용자로부터 입력이 일어나는 것

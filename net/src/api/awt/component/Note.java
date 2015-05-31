@@ -1,4 +1,4 @@
-package api.awt;
+package api.awt.component;
 import   java.awt.*;
 import   java.awt.event.*;
 
@@ -20,7 +20,7 @@ public class Note extends  Frame {
 		//감시자=>윈도우감시자
 		MyExit me = new MyExit( ); //아래문장은익명의개체로 접근
 		this.addWindowListener(new MyExit( ));
-	}//생성자end
+	}
 	
 	public static void main(String[] args) {//static=정적함수
 		new Note( );//개체이름이 없어요 annoymous
@@ -31,7 +31,7 @@ public class Note extends  Frame {
 			System.out.println("내부클래스 프로그램을 종료합니다");
 			System.exit(1);//진짜종료처리 Terminates the currently Running JVM
 		}		
-	}//내부클래스 end
-} //class END======================================================================
+	}
+} 
 
 
