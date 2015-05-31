@@ -1,12 +1,13 @@
-package api.awt.label;
+package api.awt.panel;
 
+import java.awt.Button;
+import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.FlowLayout;
 import java.awt.Frame;
-import java.awt.Label;
+import java.awt.Panel;
 import java.awt.Toolkit;
 
-public class LabelDemo {
+public class PanelDemo {
 	public static void main(String[] args) {
 		/*
 		 * [1] 컴포넌트 생성
@@ -16,18 +17,18 @@ public class LabelDemo {
 		Toolkit toolkit = Toolkit.getDefaultToolkit(); // Toolkit 객체생성
 		Dimension dimension = toolkit.getScreenSize(); // 화면크기
 		
-		Label labId = new Label(" ID :");
-		labId.setBounds(50,50,30,10); // 50.50 위치에 가로 30 세로 10
-		Label labPwd = new Label(" Password :");
-		labPwd.setBounds(50,65,100,10);
+		Panel panel = new Panel();
+		panel.setBackground(Color.GREEN);
+		panel.setSize(100, 100);
+		panel.setLocation(50,50);
+		
+		Button ok = new Button("OK");
 		
 		/*
 		 * [2] 컴포넌트 결합
 		 * */
-		frame.setLayout(new FlowLayout()); 
-			// LayoutManager 을 FlowLayout 을 설정
-		frame.add(labId);
-		frame.add(labPwd);
+		panel.add(ok);
+		frame.add(panel);
 		
 		/*
 		 * [3] 컴포넌트 구체화
