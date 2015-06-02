@@ -1,4 +1,4 @@
-package chattings;
+package swing.project;
 
 import java.io.*;
 import java.net.*;

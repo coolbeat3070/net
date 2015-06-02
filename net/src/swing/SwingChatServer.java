@@ -1,4 +1,4 @@
-package apix.swing;
+package swing;
 import java.awt.Font;
 import java.awt.TextArea;
 import java.awt.event.ActionEvent;
@@ -17,13 +17,13 @@ import java.util.Vector;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
-public class GUIChatServer extends JFrame implements ActionListener{
+public class SwingChatServer extends JFrame implements ActionListener{
 	  TextArea txt_list;
 	  JButton btn_exit;
 	  ServerSocket ss=null;	
 	  Vector inwon;    //인원수 카운트
 	
-	public GUIChatServer() 	{
+	public SwingChatServer() 	{
 		super("Chatting Server");
 		
 		txt_list = new TextArea();
@@ -69,19 +69,19 @@ public class GUIChatServer extends JFrame implements ActionListener{
 	} //end
 	
 	public static void main(String[] args) {
-		new GUIChatServer();
+		new SwingChatServer();
 	} //end
 } //GUIChatServer class END
 
 
 
 class ChatHandle extends Thread {
-	GUIChatServer server=null;
+	SwingChatServer server=null;
 	Socket sock=null;
 	PrintWriter pw=null;
 	BufferedReader br=null;
 	
-	public ChatHandle(GUIChatServer server, Socket sock)	{
+	public ChatHandle(SwingChatServer server, Socket sock)	{
 		this.server=server;
 		this.sock=sock;
 		

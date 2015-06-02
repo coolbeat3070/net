@@ -1,4 +1,4 @@
-package apix.swing;
+package swing;
 
 public class Lotto {
 	int[] lotto = new int[6];

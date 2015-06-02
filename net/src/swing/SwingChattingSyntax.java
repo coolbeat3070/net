@@ -1,6 +1,6 @@
-package apix.swing;
+package swing;
 
-public class GUIChattingText {
+public class SwingChattingSyntax {
 /*
 [다자간 채팅]
 

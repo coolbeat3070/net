@@ -1,4 +1,4 @@
-package apix.swing;
+package swing;
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
 import java.awt.Color;
@@ -22,7 +22,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-public class GUIChatClient extends JFrame implements ActionListener,Runnable{ 
+public class SwingChatClient extends JFrame implements ActionListener,Runnable{ 
 	JPanel cardPane, connectPane, chatPane;
 	JLabel  msg;
 	JButton btn_connect, btn_send, btn_exit;
@@ -37,7 +37,7 @@ public class GUIChatClient extends JFrame implements ActionListener,Runnable{
 	BufferedReader br=null;            
 	OutputStream os=null;
 	
-	public GUIChatClient() 	{
+	public SwingChatClient() 	{
 		super("Chatting Client(ver 1.0)");
 		ConnectPane();
 		ChatPane();
@@ -150,7 +150,7 @@ public class GUIChatClient extends JFrame implements ActionListener,Runnable{
 	} //run end
 	
 	public static void main(String[] args) {
-		new GUIChatClient();
+		new SwingChatClient();
 	} //end
 }//class END
 

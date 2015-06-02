@@ -1,5 +1,5 @@
-package apix.swing;
-
+package swing;
+/*시스아웃만 찍히고 모양은 안보임 - 실패*/
 import java.awt.Color;
 import java.awt.Frame;
 import java.awt.Graphics;
@@ -19,6 +19,7 @@ import javax.swing.JPanel;
 public class SwingCalcDemo {
 	public static void main(String[] args) {
 		SwingCalcDemo m = new SwingCalcDemo();
+		
 		System.out.println("lll");
 	}
 
